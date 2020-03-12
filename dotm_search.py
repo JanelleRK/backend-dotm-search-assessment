@@ -27,7 +27,7 @@ def find_text_zipfile(z, search_text, full_path):
 
 def create_parser():
     parser = argparse.ArgumentParser(description="Find text in dotm files")
-    parser.add_argument('--dir', help='directory to find dotm files')
+    parser.add_argument('--dir', help='directory to find dotm files', default='.')
     parser.add_argument('text', help='find text')
     return parser
 
